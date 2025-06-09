@@ -36,6 +36,7 @@ Vision-Token-Reduction-Survey
 
 The textual tokens and visual tokens are then combined
 to be fed to an LLM to generate the prediction in an autoregressive manner.  Specifically, $\hat N$ output tokens $Y=\{y_1,\dots, y_{\hat N}\}$ are generated as follows:
+
 $$
 P(y_1,\dots,y_{\hat N}| E_t,E_v)=\prod P(y_i| y< i, E_t,E_v)
 $$
