@@ -45,9 +45,11 @@ $$
 
 # TFLOP ratio
  TFLOP ratio is the TFLOP of the model with pruned tokens relative to the original model’s TFLOP with no pruning. 
+
  $$
  \frac {K \times  (4\mu d^2-2\mu^2d +2\mu dm)+(T-K)\times (4 \widetilde \mu d^2-2\widetilde \mu dm)}{T\times (4-\mu d^2-2 \mu ^2d+2 \mu dm)}
  $$
+ 
 where $T$ is the total transformer-based decoder layers. $\mu = N+M$ is the total sequence length before pruning,$ \widetilde \mu =N+M $is the sequence length after pruning. $d$ is the hidden state size of the layer, and m is the intermediate size of feed-forward network module.
 
 # Comparison of performance and speed of different methods
